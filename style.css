@@ -12,16 +12,22 @@ body{
     min-width: 479px;
     padding:10px 20px;
 }
+.bkg-fuchsia{
+    background-color: blueviolet;
+}
+/* HEADER + NAVBAR */
 header {
     background-color: rgb(43, 151, 253);
     color: white;
     width: 100%;
+    height: 60px;
     position: fixed;
     top:0;
     left:0;
     z-index: 2;
 }
 .navbar {
+    padding:20px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,12 +35,72 @@ header {
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 .column{
     flex-direction: column;
-    padding:0px 5px;
+    padding: 20px 50px;
+    
 }
+/* CARDS */
+
 .card{
+    text-align: center;
     background-color: blue;
-    padding:20px;
+    padding: 0px 40px;
+    border-radius: 5%;
+    margin-bottom:25px;
+}
+.card:first-child{
+    text-align: start;
+    padding: 0px 40px;
+    border-radius: 5%;
+    border: 2px black dashed;
+    
+}
+.cardone{
+    background-color: darkgray;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.fa-file-code{
+    font-size: 55px;
+    padding: 20px 0px;
+}
+.title-card{
+    font-size: 23px;
+    padding:15px 0px;
+    color: rgb(13, 134, 255);
+}
+.text-card{
+    font-size: 17px;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    color: grey;
+}
+.button-card{
+    height: 35px;
+    padding: 5px 40px;
+    margin: 15px 0px;
+    border-radius: 20px;
+    color: white;
+    background-color: darkblue;
+}
+.img-card{
+    text-align: center;
+    display: block;
+}
+.cerchietto{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
