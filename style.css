@@ -104,3 +104,13 @@ header {
     justify-content: center;
     align-items: center;
 }
+.testimonials{
+    text-align: center;
+    background-color: dimgray;
+}
+.img-cardone{
+    width: 20%;
+    height: 20%;
+    max-width: 40%;
+  
+}
