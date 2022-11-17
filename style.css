@@ -14,11 +14,21 @@ body{
     padding:10px 20px;
 }
 .bkg-fuchsia{
-    background-color: blueviolet;
+    background-color: #9792e4;
+}
+.bkg-black{
+    background-color: darkgrey;
+}
+h3{
+    padding:40px 0;
+    font-size: 30px;
+}
+p{
+    padding:40px 0;
 }
 /* HEADER + NAVBAR */
 header {
-    background-color: rgb(43, 151, 253);
+    background-color: #0084fd;
     color: white;
     width: 100%;
     position: fixed;
@@ -53,19 +63,15 @@ header {
 /* CARDS */
 
 .card{
-    text-align: center;
-    background-color: blue;
+    background-color: #b5ddff;
     padding: 0px 40px;
     border-radius: 5%;
     margin-bottom:25px;
 }
-.card:first-child{
-    text-align: start;
-    padding: 0px 40px;
-    border-radius: 5%;
-    border: 2px black dashed;
-    
-}
+.fa-file-code:nth-child(2) , .title-card:nth-child(2) , .text-card:nth-child(3){
+    text-align: center;
+  }
+
 .cardone{
     background-color: darkgray;
     border-radius: 15%;
@@ -75,7 +81,7 @@ header {
     padding: 30px 0px;
 }
 
-.fa-file-code{
+.fa-file-code , .fa-compass-drafting , .fa-laptop-code , .fa-bullhorn{
     font-size: 55px;
     padding: 20px 0px;
 }
@@ -94,13 +100,22 @@ header {
     height: 35px;
     padding: 5px 40px;
     margin: 15px 0px;
+    border: 0;
     border-radius: 20px;
     color: white;
-    background-color: darkblue;
+    background-color: #0084fd;
 }
 .img-card{
     text-align: center;
-    display: block;
+}
+.img-card img{
+    width: 100%;
+}
+.pic{
+    padding:10px;
+}
+.pic img{
+    width: 100%;
 }
 .cerchietto{
     height: 50px;
@@ -122,17 +137,24 @@ header {
     max-width: 40%;
   
 }
+.strategic{
+    color: white;
+}
 /* MediaQuery */
 @media screen and (min-width:768px){
     .container{
-        max-width: 769px;
+        max-width: 700px;
     }
     .column{
-        width: calc( 100% / 3*2);
+        flex-wrap: wrap;
+        flex-basis: calc( 100% / 3*2);
     }
 
 }
 @media screen and (min-width:993px){
+    .container{
+        max-width: 900px;
+    }
     .fa-bars:before{
         display: none;
     }
@@ -143,4 +165,10 @@ header {
         display: flex;
         align-items: center;
     }
+}
+
+
+.applicazioni .prova{
+    min-height: 400px;
+    margin-bottom: 2rem ;
 }
