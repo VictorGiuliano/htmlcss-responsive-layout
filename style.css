@@ -6,10 +6,11 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
-    padding-top:40px;
+    padding-top:80px;
 }
 .container{
-    min-width: 479px;
+    max-width: 1200px;
+    margin:0 auto;
     padding:10px 20px;
 }
 .bkg-fuchsia{
@@ -20,7 +21,6 @@ header {
     background-color: rgb(43, 151, 253);
     color: white;
     width: 100%;
-    height: 60px;
     position: fixed;
     top:0;
     left:0;
@@ -32,6 +32,14 @@ header {
     align-items: center;
     justify-content: space-between;
   }
+.navbar-actions ul{
+    list-style-type: none;
+    display: none;
+
+}
+.navbar-actions a{
+    padding:0 5px;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -113,4 +121,26 @@ header {
     height: 20%;
     max-width: 40%;
   
+}
+/* MediaQuery */
+@media screen and (min-width:768px){
+    .container{
+        max-width: 769px;
+    }
+    .column{
+        width: calc( 100% / 3*2);
+    }
+
+}
+@media screen and (min-width:993px){
+    .fa-bars:before{
+        display: none;
+    }
+    .navbar-actions{
+        padding-bottom: 10px;
+    }
+    .navbar-actions ul{
+        display: flex;
+        align-items: center;
+    }
 }
